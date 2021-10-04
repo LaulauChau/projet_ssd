@@ -9,6 +9,9 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define MIN 100
+#define MAX 100
+
 typedef struct Element_str {
     char texte[50];
     struct Element_str* next;
@@ -16,6 +19,7 @@ typedef struct Element_str {
 
 typedef struct Pile_Gouts {
     // TODO
+    struct Element_str* l_gouts; // Liste de gouts a disposition
 } Pile_Gouts;
 
 typedef struct Gateau {
@@ -30,20 +34,15 @@ typedef struct Element_gtx {
 
 typedef struct File_Commandes {
     // TODO
-    struct Element_gtx* current;
-    struct File_Commandes* next;
+    struct Element_str* data;
 } File_Commandes;
 
 typedef struct File_Degustation {
     // TODO
-    struct Element_gtx* current;
-    struct File_Degustation* next;
+    struct Element_gtx* data;
 } File_Degustation;
 
-Element_str* l_gouts; // Liste de gouts a disposition
-File_Commandes* f_commandes; // File de commandes
-File_Degustation* f_degustation; // File de degustation
-
-Element_str* initialiser_gouts();
+Element_str* initialiser_gouts(char liste_gouts[MIN][MAX]);
+void passer_commande(char commande[50], File_Commandes* f_commandes);
 
 #endif //PROJET_CORE_H

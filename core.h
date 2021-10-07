@@ -34,7 +34,8 @@ typedef struct Element_gtx {
 
 typedef struct File_Commandes {
     // TODO
-    struct Element_str* data;
+    struct Element_str* commande;
+    int nb_commandes;
 } File_Commandes;
 
 typedef struct File_Degustation {
@@ -42,7 +43,8 @@ typedef struct File_Degustation {
     struct Element_gtx* data;
 } File_Degustation;
 
-Element_str* initialiser_gouts(char liste_gouts[MIN][MAX]);
+Element_str* initialiser_gouts();
 void passer_commande(char commande[50], File_Commandes* f_commandes);
+Element_str* traiter_commande(File_Commandes* f_commandes);
 
 #endif //PROJET_CORE_H

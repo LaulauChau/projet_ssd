@@ -19,7 +19,8 @@ typedef struct Element_str {
 
 typedef struct Pile_Gouts {
     // TODO
-    struct Element_str* l_gouts; // Liste de gouts a disposition
+    char texte[50];
+    struct Pile_Gouts* next;
 } Pile_Gouts;
 
 typedef struct Gateau {
@@ -46,5 +47,8 @@ typedef struct File_Degustation {
 Element_str* initialiser_gouts();
 void passer_commande(char commande[50], File_Commandes* f_commandes);
 Element_str* traiter_commande(File_Commandes* f_commandes);
+void construire_gateau(Gateau* gateau, Element_str* l_gouts);
+void livrer(Gateau* gateau, File_Degustation* f_degustation);
+void degustation(File_Degustation* f_degustation, int nb_parts);
 
 #endif //PROJET_CORE_H

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Laurent Chau/Desktop/Dossier Principal/Cours/EFREI/Semestre 3/Informatique generale/Informatique generale/SSD/projet_patissier/core.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+C:/Users/Laurent Chau/Desktop/Dossier Principal/Cours/EFREI/Semestre 3/Informatique generale/Informatique generale/SSD/projet_patissier/main.c
+core.h
+C:/Users/Laurent Chau/Desktop/Dossier Principal/Cours/EFREI/Semestre 3/Informatique generale/Informatique generale/SSD/projet_patissier/core.h
+

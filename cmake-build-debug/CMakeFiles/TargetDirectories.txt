@@ -1,0 +1,3 @@
+C:/Users/Laurent Chau/Desktop/Dossier Principal/Cours/EFREI/Semestre 3/Informatique generale/Informatique generale/SSD/projet_patissier/cmake-build-debug/CMakeFiles/projet_patissier.dir
+C:/Users/Laurent Chau/Desktop/Dossier Principal/Cours/EFREI/Semestre 3/Informatique generale/Informatique generale/SSD/projet_patissier/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Laurent Chau/Desktop/Dossier Principal/Cours/EFREI/Semestre 3/Informatique generale/Informatique generale/SSD/projet_patissier/cmake-build-debug/CMakeFiles/rebuild_cache.dir
